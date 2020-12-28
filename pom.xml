@@ -17,10 +17,10 @@
     <quarkus.platform.version>1.9.2.Final</quarkus.platform.version>
     <surefire-plugin.version>3.0.0-M5</surefire-plugin.version>
   </properties>
-<!--  <scm>-->
-<!--    <developerConnection>scm:git:git@github.com:adnan-drina/quarkus-demo-app</developerConnection>-->
-<!--    <tag>HEAD</tag>-->
-<!--  </scm>-->
+  <scm>
+    <developerConnection>scm:git:git@github.com:adnan-drina/quarkus-demo-app</developerConnection>
+    <tag>HEAD</tag>
+  </scm>
   <dependencyManagement>
     <dependencies>
       <dependency>
@@ -78,11 +78,11 @@
           </systemPropertyVariables>
         </configuration>
       </plugin>
-<!--      <plugin>-->
-<!--        <groupId>org.apache.maven.plugins</groupId>-->
-<!--        <artifactId>maven-release-plugin</artifactId>-->
-<!--        <version>3.0.0-M1</version>-->
-<!--      </plugin>-->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-release-plugin</artifactId>
+        <version>3.0.0-M1</version>
+      </plugin>
     </plugins>
   </build>
   <profiles>
