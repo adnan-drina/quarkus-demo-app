@@ -19,7 +19,7 @@
   </properties>
   <scm>
     <developerConnection>scm:git:git@github.com:adnan-drina/quarkus-demo-app</developerConnection>
-    <tag>v1.12</tag>
+    <tag>v1.15</tag>
   </scm>
   <dependencyManagement>
     <dependencies>
