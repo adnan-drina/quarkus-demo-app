@@ -16,10 +16,10 @@ public class GreetingResourceTest {
           .when().get("/hello")
           .then()
              .statusCode(200)
-             .body(is("hello quarkus"));
+             .body(is("hello quarkus!"));
     }
     
-        @Test
+    @Test
     public void testGreetingEndpoint() {
         String uuid = UUID.randomUUID().toString();
         given()
