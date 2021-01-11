@@ -22,12 +22,9 @@
     <quarkus.platform.version>1.9.2.Final</quarkus.platform.version>
     <surefire-plugin.version>3.0.0-M5</surefire-plugin.version>
     <!-- Sonar-JaCoCo properties -->
-    <sonar.sources>src/main</sonar.sources>
-    <sonar.tests>src/test</sonar.tests>
-    <sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
+    <sonar.core.codeCoveragePlugin>jacoco</sonar.core.codeCoveragePlugin>
     <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
-    <sonar.jacoco.reportPath>${project.basedir}/../target/jacoco.exec</sonar.jacoco.reportPath>
-    <sonar.language>java</sonar.language>
+    <sonar.jacoco.reportPath>${user.dir}/target/jacoco.exec</sonar.jacoco.reportPath>
     <jacoco.version>0.8.6</jacoco.version>
   </properties>
   <dependencyManagement>
@@ -82,8 +79,7 @@
         <artifactId>jacoco-maven-plugin</artifactId>
         <version>${jacoco.version}</version>
         <configuration>
-          <destFile>${sonar.jacoco.reportPath}</destFile>
-          <append>true</append>
+          <destFile>${session.executionRootDirectory}/target/jacoco.exec</destFile>
         </configuration>
         <executions>
           <execution>
