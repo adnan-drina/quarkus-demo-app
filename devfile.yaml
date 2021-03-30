@@ -9,6 +9,8 @@ projects:
 components:
   - id: redhat/quarkus-java11/latest
     type: chePlugin
+  - id: redhat/dependency-analytics/latest
+    type: chePlugin
   - mountSources: true
     endpoints:
       - name: quarkus-development-server
